@@ -13,19 +13,18 @@ free game release or a gaming giveaway is NEWS, not automatically advertising.
 Do not exclude it just because discounts or giveaways are mentioned. A genuine
 editorial report about a product, free tool or company also remains news.
 
-When unsure, KEEP the post and describe uncertainty in its annotation.
-Remove channel subscription slogans and promotional endings from retained text.
+When unsure, KEEP the post. Original posts will be displayed verbatim; do not rewrite them or remove their signatures.
 
 Combine posts describing the SAME event and facts into ONE item. Preserve all
 substantive facts without repeating them. Similar subjects alone are not duplicates.
 If a post merely repeats one of the existing articles, use its id as duplicate_of.
 A meaningful new development is a NEW item, not a duplicate of an old event.
 
-For each item write a clear specific Russian title and Russian news text, preserving
-the supplied facts and attribution. Do not add independent facts, invent claims,
-strengthen uncertain assertions or report Telegram claims as independently verified.
-Retain substantive content; no arbitrary 2-sentence limit. Media-only references
-should be described as such; never pretend to have watched the attached video.
+Do NOT write a replacement article, summary or headline. Your role is ONLY
+classification, duplicate grouping and relevance scoring. The publisher chooses
+one ORIGINAL source post (the most complete) for each group and shows its exact
+text, links and available media. Media-only posts have not been visually analysed;
+keep them with a low/unknown relevance score instead of inventing their contents.
 
 Score personal relevance on 0–10. Security/privacy/social engineering, meaningful
 AI news/tools and practical technical insights are strong interests. Computing and
@@ -34,8 +33,7 @@ interest too (8–9 when substantive). Ordinary tech updates 4–6, entertainmen
 1–3. Exceptional usefulness 9–10. This is personal relevance, not a truth score.
 Keep low-scoring non-advertising items. Give a concise Russian reason for the score.
 
-Return JSON only: {"items":[{"post_ids":["input id"],"title":"...",
-"text":"clean merged text","score":5,"reason":"...","duplicate_of":null}],
+Return JSON only: {"items":[{"post_ids":["input id"],"score":5,"reason":"...","duplicate_of":null}],
 "ads":[{"post_id":"input id","reason":"specific advertising evidence"}]}.
 Every NEW input post_id MUST occur exactly once, in one item's post_ids OR in ads.
 duplicate_of must be null or an existing article id supplied in context.

@@ -9,10 +9,11 @@ from daily_feed import merge_decisions, export
 class DailyFeedTest(unittest.TestCase):
     def setUp(self):
         self.state={'articles':[],'processed_ids':[]}
-        self.posts={i:{'id':i,'url':'https://t.me/test/'+i,'channel':'test'} for i in ['1','2','3','4']}
+        self.posts={i:{'id':i,'url':'https://t.me/test/'+i,'channel':'test','title':'Original headline '+i,
+                       'text':'Author exact original words '+i,'original_html':'<b>Author exact original words '+i+'</b><br><a href="https://example.com/article?x=1">Original link</a><script>unsafe()</script>'} for i in ['1','2','3','4']}
         self.result={'items':[
-            {'post_ids':['1','2'],'title':'Same story','text':'<script>untrusted</script>','score':8,'reason':'Relevant','duplicate_of':None},
-            {'post_ids':['3'],'title':'Small news','text':'Keep this too','score':1,'reason':'Low personal interest','duplicate_of':None}],
+            {'post_ids':['1','2'],'score':8,'reason':'Relevant','duplicate_of':None},
+            {'post_ids':['3'],'score':1,'reason':'Low personal interest','duplicate_of':None}],
             'ads':[{'post_id':'4','reason':'Explicit promo code and paid placement'}]}
         self.config={'title':'Test feed','min_score':None}
 
@@ -33,8 +34,12 @@ class DailyFeedTest(unittest.TestCase):
             self.assertEqual(export(self.state,self.config,out),2)
             items=ET.parse(out/'tech-news.xml').findall('./channel/item')
             content=items[0].findtext('{http://purl.org/rss/1.0/modules/content/}encoded')
-            self.assertIn('&lt;script&gt;',content)
+            self.assertIn('<b>Author exact original words 1</b>',content)
+            self.assertIn('href="https://example.com/article?x=1"',content)
             self.assertNotIn('<script>',content)
+            self.assertNotIn('unsafe()',content)
+            self.assertNotIn('Relevant',content)
+            self.assertEqual(items[0].findtext('title'),'[8/10] Original headline 1')
             ids=[i.findtext('guid') for i in items]
             export(self.state,self.config,out)
             self.assertEqual(ids,[i.findtext('guid') for i in ET.parse(out/'tech-news.xml').findall('./channel/item')])
