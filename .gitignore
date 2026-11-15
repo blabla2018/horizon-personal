@@ -1,0 +1,16 @@
+.env
+.env.*
+!.env.example
+.venv/
+__pycache__/
+.DS_Store
+*.log
+auth/
+credentials.json
+host.json
+data/subscribers.json
+data/*
+!data/config.json
+!data/summaries/
+data/summaries/*
+!data/summaries/horizon-????-??-??-ru.md

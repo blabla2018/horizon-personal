@@ -1,0 +1,20 @@
+{
+  "id": "personal-reading",
+  "name": "Личная подборка",
+  "display_names": {
+    "ru": "Личная подборка"
+  },
+  "match": "match.md",
+  "analysis": "analysis.md",
+  "enrichment": {
+    "prompt": "enrichment.md",
+    "blocks": [
+      {
+        "id": "summary",
+        "type": "section",
+        "tools": [],
+        "primary": true
+      }
+    ]
+  }
+}

@@ -1,0 +1,16 @@
+services:
+  horizon:
+    image: horizon-personal:12d5fbde4d9e
+    build:
+      context: https://github.com/Thysrael/Horizon.git#12d5fbde4d9e0776a48618ea65d16fe6d1e1b606
+    volumes:
+      - ./data:/app/data
+      - ./profiles:/app/profiles:ro
+      - ./telegram_links.py:/app/telegram_links.py:ro
+      - ./.env:/app/.env:ro
+      - ${HORIZON_CHATGPT_AUTH_DIR_HOST:-../horizon-auth}:/var/lib/horizon-chatgpt
+    environment:
+      TZ: Europe/Madrid
+      HORIZON_CHATGPT_AUTH_DIR: /var/lib/horizon-chatgpt
+    restart: "no"
+    command: ["--hours", "168"]

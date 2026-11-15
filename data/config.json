@@ -1,0 +1,205 @@
+{
+  "ai": {
+    "provider": "openai-chatgpt",
+    "model": "gpt-6-luna",
+    "languages": [
+      "ru"
+    ],
+    "analysis_concurrency": 3,
+    "enrichment_concurrency": 3
+  },
+  "sources": {
+    "hackernews": {
+      "enabled": false
+    },
+    "reddit": {
+      "enabled": false
+    },
+    "telegram": {
+      "enabled": true,
+      "channels": [
+        {
+          "channel": "it_secur",
+          "fetch_limit": 100,
+          "profile": "personal-reading"
+        },
+        {
+          "channel": "Social_engineering",
+          "fetch_limit": 100,
+          "profile": "personal-reading"
+        },
+        {
+          "channel": "durov",
+          "fetch_limit": 100,
+          "profile": "personal-reading"
+        },
+        {
+          "channel": "data_secrets",
+          "fetch_limit": 100,
+          "profile": "personal-reading"
+        },
+        {
+          "channel": "matvei_vibecoding",
+          "fetch_limit": 100,
+          "profile": "personal-reading"
+        }
+      ]
+    },
+    "rss": [
+      {
+        "name": "AdGuard Blog",
+        "url": "https://adguard.com/blog/rss-en.xml",
+        "enabled": true,
+        "category": "security",
+        "profile": "personal-reading"
+      },
+      {
+        "name": "Alessia Santeramo",
+        "url": "https://www.youtube.com/feeds/videos.xml?playlist_id=UULFev4nu08slP5BSW24OJuSIw",
+        "enabled": true,
+        "category": "chess",
+        "profile": "personal-reading"
+      },
+      {
+        "name": "AppleInsider",
+        "url": "https://feeds.feedburner.com/appleinsider_ru",
+        "enabled": false,
+        "category": "technology",
+        "profile": "personal-reading"
+      },
+      {
+        "name": "Applesfera",
+        "url": "https://www.applesfera.com/index.xml",
+        "enabled": false,
+        "category": "technology",
+        "profile": "personal-reading"
+      },
+      {
+        "name": "Ars Technica — Technology Lab",
+        "url": "https://feeds.arstechnica.com/arstechnica/technology-lab",
+        "enabled": true,
+        "category": "technology",
+        "profile": "personal-reading"
+      },
+      {
+        "name": "DC Rainmaker",
+        "url": "https://www.dcrainmaker.com/feed",
+        "enabled": true,
+        "category": "sport",
+        "profile": "personal-reading"
+      },
+      {
+        "name": "Habr",
+        "url": "${HABR_RSS_URL}",
+        "enabled": true,
+        "category": "technology",
+        "profile": "personal-reading"
+      },
+      {
+        "name": "iPadizate",
+        "url": "https://feeds.feedburner.com/Ipadizate",
+        "enabled": false,
+        "category": "technology",
+        "profile": "personal-reading"
+      },
+      {
+        "name": "National Geographic España",
+        "url": "https://www.nationalgeographic.com.es/feeds/rss.html",
+        "enabled": true,
+        "category": "science",
+        "profile": "personal-reading"
+      },
+      {
+        "name": "Quanta Magazine",
+        "url": "https://api.quantamagazine.org/feed/",
+        "enabled": true,
+        "category": "science",
+        "profile": "personal-reading"
+      },
+      {
+        "name": "Securelist",
+        "url": "https://securelist.ru/feed/",
+        "enabled": true,
+        "category": "security",
+        "profile": "personal-reading"
+      },
+      {
+        "name": "TED-Ed",
+        "url": "https://www.youtube.com/feeds/videos.xml?playlist_id=UULFsooa4yRKGN_zEE8iknghZA",
+        "enabled": true,
+        "category": "education",
+        "profile": "personal-reading"
+      },
+      {
+        "name": "The Verge — AI",
+        "url": "https://www.theverge.com/rss/ai-artificial-intelligence/index.xml",
+        "enabled": false,
+        "category": "ai",
+        "profile": "personal-reading"
+      },
+      {
+        "name": "The Verge — Science",
+        "url": "https://www.theverge.com/rss/science/index.xml",
+        "enabled": false,
+        "category": "science",
+        "profile": "personal-reading"
+      },
+      {
+        "name": "Training — Bicycling",
+        "url": "https://www.bicycling.com/rss/training.xml",
+        "enabled": true,
+        "category": "sport",
+        "profile": "personal-reading"
+      },
+      {
+        "name": "Viktoria Verde, PhD",
+        "url": "https://medium.com/feed/@viktoriaverde1",
+        "enabled": true,
+        "category": "science",
+        "profile": "personal-reading"
+      },
+      {
+        "name": "Александр Гельман",
+        "url": "https://www.youtube.com/feeds/videos.xml?playlist_id=UULFzRZ8iCtmqf6VyiCrZLcdWg",
+        "enabled": true,
+        "category": "chess",
+        "profile": "personal-reading"
+      },
+      {
+        "name": "Антон Василёнок",
+        "url": "https://www.youtube.com/feeds/videos.xml?playlist_id=UULF1r9xwtcNAOpW7kVKUVfaWQ",
+        "enabled": true,
+        "category": "chess",
+        "profile": "personal-reading"
+      },
+      {
+        "name": "Антон Василёнок | Шахматы",
+        "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UC1r9xwtcNAOpW7kVKUVfaWQ",
+        "enabled": false,
+        "category": "chess",
+        "profile": "personal-reading"
+      },
+      {
+        "name": "Касперский",
+        "url": "https://blog.kaspersky.ru/feed/",
+        "enabled": true,
+        "category": "security",
+        "profile": "personal-reading"
+      }
+    ]
+  },
+  "processing": {
+    "profiles_dir": "profiles",
+    "default_profile": "personal-reading",
+    "profile_settings": {
+      "personal-reading": {
+        "threshold": 4.0,
+        "topic_dedup": true
+      }
+    }
+  },
+  "digest": {},
+  "collection": {
+    "time_window_hours": 168
+  }
+}
