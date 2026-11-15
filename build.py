@@ -12,7 +12,9 @@ ROOT = Path(__file__).resolve().parent
 import markdown
 HORIZON = ROOT
 def _prepare_email_markdown(text):
-    return text.replace('<', '&lt;').replace('\\|', '|')
+    text = text.replace('<', '&lt;').replace('\\|', '|')
+    list_item = r'[ \t]*(?:\d+[.)]|[-*+])[ \t]'
+    return re.sub(rf'(?m)^((?!{list_item}).*\S.*)\n(?={list_item})', r'\1\n\n', text)
 def _render_email_markdown(text):
     return markdown.markdown(text)
 
@@ -61,6 +63,7 @@ for source in sorted((HORIZON/'data/summaries').glob('horizon-????-??-??-ru.md')
     body=_render_email_markdown(_prepare_email_markdown(text))
     body=re.sub(r'<p>ANCHORPLACEHOLDER-([a-zA-Z0-9-]+)-END</p>',r'<a id="\1"></a>',body)
     body=body.replace('<ol>','<details><summary>Содержание · '+str(count)+' публикаций</summary><ol>',1).replace('</ol>','</ol></details>',1)
+    assert not count or '<details><summary>Содержание' in body, 'Missing table of contents'
     check=Links();check.feed(body)
     assert all(link[1:] in check.ids for link in check.hrefs if link.startswith('#'))
     filename=source.stem+'.html'; url=ORIGIN+'/'+filename
