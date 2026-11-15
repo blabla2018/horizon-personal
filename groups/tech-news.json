@@ -1,0 +1,11 @@
+{
+  "id": "tech-news",
+  "title": "Техноновости — Horizon",
+  "channels": [
+    "bugnotfeature",
+    "media1337"
+  ],
+  "lookback_days": 7,
+  "max_pages_per_channel": 4,
+  "min_score": null
+}

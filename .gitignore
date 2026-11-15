@@ -11,6 +11,9 @@ host.json
 data/subscribers.json
 data/*
 !data/config.json
+!data/groups/
+data/groups/*
+!data/groups/tech-news.json
 !data/summaries/
 data/summaries/*
 !data/summaries/horizon-????-??-??-ru.md

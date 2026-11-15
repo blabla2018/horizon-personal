@@ -7,6 +7,9 @@ services:
       - ./data:/app/data
       - ./profiles:/app/profiles:ro
       - ./telegram_links.py:/app/telegram_links.py:ro
+      - ./daily_feed.py:/app/daily_feed.py:ro
+      - ./groups:/app/groups:ro
+      - ./docs:/app/docs
       - ./.env:/app/.env:ro
       - ${HORIZON_CHATGPT_AUTH_DIR_HOST:-../horizon-auth}:/var/lib/horizon-chatgpt
     environment:
