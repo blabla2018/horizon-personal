@@ -1,11 +1,13 @@
 """Export local Horizon digests as a static reading site and a full-content RSS feed."""
 import html
 import re
-import sys
-from datetime import datetime, timezone
+import hashlib
+from datetime import datetime
 from email.utils import format_datetime
 from html.parser import HTMLParser
 from pathlib import Path
+from urllib.parse import urlsplit, urlunsplit, parse_qsl, urlencode
+from zoneinfo import ZoneInfo
 import xml.etree.ElementTree as ET
 
 ROOT = Path(__file__).resolve().parent
@@ -19,6 +21,37 @@ def _render_email_markdown(text):
     return markdown.markdown(text)
 
 ORIGIN = 'https://blabla2018.github.io/horizon-personal'
+
+def article_key(url):
+    parts = urlsplit(url)
+    host = (parts.hostname or '').lower().removeprefix('www.')
+    path = parts.path
+    if host in {'telegram.me', 't.me'}:
+        host = 't.me'
+        path = re.sub(r'^/s/', '/', path).lower()
+    query = sorted((k,v) for k,v in parse_qsl(parts.query) if not k.lower().startswith('utm_') and k.lower() not in {'fbclid','gclid'})
+    return urlunsplit(('https', host, path.rstrip('/'), urlencode(query), ''))
+
+def publication_date(date):
+    return format_datetime(datetime.fromisoformat(date+'T12:00:00').replace(tzinfo=ZoneInfo('Europe/Madrid')))
+
+class ArticleHeader(HTMLParser):
+    def __init__(self):
+        super().__init__(); self.url=None; self.title=[]; self.in_link=False
+    def handle_starttag(self, tag, attrs):
+        if tag=='a' and self.url is None:
+            self.url=dict(attrs)['href']; self.in_link=True
+    def handle_endtag(self, tag):
+        if tag=='a': self.in_link=False
+    def handle_data(self, data):
+        if self.in_link: self.title.append(data)
+
+def rss_channel(title, filename, description):
+    rss=ET.Element('rss',version='2.0'); channel=ET.SubElement(rss,'channel')
+    for name,value in [('title',title),('link',ORIGIN+'/'),('description',description),('language','ru')]:
+        ET.SubElement(channel,name).text=value
+    ET.SubElement(channel,'{http://www.w3.org/2005/Atom}link',href=ORIGIN+'/'+filename,rel='self',type='application/rss+xml')
+    return rss, channel
 CSS = '''
 :root{color-scheme:light dark;--bg:#faf8f3;--paper:#fffefa;--ink:#242c2a;--muted:#68716d;--line:#dedfd5;--accent:#17664e}
 @media(prefers-color-scheme:dark){:root{--bg:#17201d;--paper:#1d2823;--ink:#e5e8df;--muted:#a2afa5;--line:#3d4d43;--accent:#9bd8b2}}
@@ -29,7 +62,7 @@ p{margin:12px 0 20px}blockquote{border-left:3px solid var(--accent);padding-left
 '''
 
 def page(title, body):
-    return f'''<!doctype html><html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex"><title>{html.escape(title)}</title><link rel="alternate" type="application/rss+xml" title="Мои дайджесты — Horizon" href="{ORIGIN}/feed.xml"><style>{CSS}</style></head><body id="top"><header><div class="eyebrow">Horizon · Security, AI и история технологий</div><nav><a href="{ORIGIN}/">Все выпуски</a><a href="{ORIGIN}/feed.xml">RSS для Inoreader</a></nav></header><main>{body}</main><footer>Аннотации подготовлены ИИ по материалам источников. Проверяйте важные факты по оригиналам.<br>Обновление: пятница, 12:00 · Europe/Madrid.</footer><a class="top" href="#top" aria-label="К началу страницы">↑ Наверх</a></body></html>'''
+    return f'''<!doctype html><html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex"><title>{html.escape(title)}</title><link rel="alternate" type="application/rss+xml" title="Мои дайджесты — Horizon" href="{ORIGIN}/feed.xml"><link rel="alternate" type="application/rss+xml" title="Мои новости — Horizon" href="{ORIGIN}/news.xml"><style>{CSS}</style></head><body id="top"><header><div class="eyebrow">Horizon · Security, AI и история технологий</div><nav><a href="{ORIGIN}/">Все выпуски</a><a href="{ORIGIN}/feed.xml">RSS дайджестов</a><a href="{ORIGIN}/news.xml">RSS отдельных новостей</a></nav></header><main>{body}</main><footer>Аннотации подготовлены ИИ по материалам источников. Проверяйте важные факты по оригиналам.<br>Обновление: пятница, 12:00 · Europe/Madrid.</footer><a class="top" href="#top" aria-label="К началу страницы">↑ Наверх</a></body></html>'''
 
 class Links(HTMLParser):
     def __init__(self):
@@ -47,10 +80,9 @@ class Links(HTMLParser):
 out=ROOT/'docs'; out.mkdir(exist_ok=True)
 ET.register_namespace('content','http://purl.org/rss/1.0/modules/content/')
 ET.register_namespace('atom','http://www.w3.org/2005/Atom')
-rss=ET.Element('rss',version='2.0'); channel=ET.SubElement(rss,'channel')
-for name,value in [('title','Мои дайджесты — Horizon'),('link',ORIGIN+'/'),('description','Security, AI и история компьютеров: до 30 материалов за неделю.'),('language','ru')]:
-    ET.SubElement(channel,name).text=value
-ET.SubElement(channel,'{http://www.w3.org/2005/Atom}link',href=ORIGIN+'/feed.xml',rel='self',type='application/rss+xml')
+rss, channel = rss_channel('Мои дайджесты — Horizon','feed.xml','Security, AI и история компьютеров: до 30 материалов за неделю.')
+news_rss, news_channel = rss_channel('Мои новости — Horizon','news.xml','Персональный отбор: одна статья — одна запись. Security, AI и история компьютеров.')
+news={}
 issues=[]
 for source in sorted((HORIZON/'data/summaries').glob('horizon-????-??-??-ru.md'),reverse=True):
     date=source.stem.removeprefix('horizon-').removesuffix('-ru')
@@ -62,6 +94,20 @@ for source in sorted((HORIZON/'data/summaries').glob('horizon-????-??-??-ru.md')
     text=re.sub(r'^<a id="([a-zA-Z0-9-]+)"></a>$',r'ANCHORPLACEHOLDER-\1-END',text,flags=re.M)
     articles=_render_email_markdown(_prepare_email_markdown(text))
     articles=re.sub(r'<p>ANCHORPLACEHOLDER-([a-zA-Z0-9-]+)-END</p>',r'<a id="\1"></a>',articles)
+    for block in re.split(r'<a id="item-[^"]+"></a>', articles)[1:]:
+        heading=re.search(r'<h3>(.*?)</h3>', block, re.S)
+        assert heading, 'Article without a heading'
+        header=ArticleHeader(); header.feed(heading[1])
+        assert header.url and header.title, 'Article without an original link or title'
+        key=article_key(header.url)
+        # Retain the earliest published annotation when an original reappears in a later issue.
+        if key in news and news[key]['date'] <= date:
+            continue
+        content=block[heading.end():].strip()
+        content=re.sub(r'\s*<hr\s*/?>\s*$', '', content)
+        score=re.search(r'⭐️\s*[\d.]+/10',heading[1])
+        if score: content='<p>'+score[0]+'</p>'+content
+        news[key]={'date':date,'title':''.join(header.title),'url':header.url,'content':content}
     body=f'<h1>{html.escape(title)}</h1><p class="meta">{count} публикаций со ссылками на оригиналы</p>'+articles
     check=Links();check.feed(body)
     assert all(link[1:] in check.ids for link in check.hrefs if link.startswith('#'))
@@ -71,14 +117,21 @@ for source in sorted((HORIZON/'data/summaries').glob('horizon-????-??-??-ru.md')
     feed_body=articles
     assert '<details>' not in feed_body and 'Личная подборка' not in feed_body
     item=ET.SubElement(channel,'item')
-    for name,value in [('title',title),('link',url),('description',f'{count} публикаций: короткие аннотации и ссылки на оригиналы.'),('pubDate',format_datetime(datetime.fromtimestamp(source.stat().st_mtime,timezone.utc))),('{http://purl.org/rss/1.0/modules/content/}encoded',feed_body)]:
+    for name,value in [('title',title),('link',url),('description',f'{count} публикаций: короткие аннотации и ссылки на оригиналы.'),('pubDate',publication_date(date)),('{http://purl.org/rss/1.0/modules/content/}encoded',feed_body)]:
         ET.SubElement(item,name).text=value
     # New edition namespace lets readers receive this focused issue alongside the old broad trial.
     ET.SubElement(item,'guid',isPermaLink='false').text='horizon:security-ai-history:'+date
     issues.append(f'<section class="issue"><div class="meta">{date} · {count} публикаций</div><a href="{url}">Подборка за неделю</a><p class="meta">Короткие аннотации и ссылки на оригинальные статьи.</p></section>')
 assert issues, 'No digests found'
+for key,article in sorted(news.items(),key=lambda entry:entry[1]['date'],reverse=True):
+    item=ET.SubElement(news_channel,'item')
+    for name,value in [('title',article['title']),('link',article['url']),('pubDate',publication_date(article['date'])),('{http://purl.org/rss/1.0/modules/content/}encoded',article['content'])]:
+        ET.SubElement(item,name).text=value
+    ET.SubElement(item,'guid',isPermaLink='false').text='horizon:article:'+hashlib.sha256(key.encode()).hexdigest()
 (out/'index.html').write_text(page('Мои дайджесты', '<h1>Читать то,<br>что интересно.</h1><p>Security, AI и история компьютеров — до 30 материалов за неделю.</p>'+''.join(issues)))
 ET.indent(rss); ET.ElementTree(rss).write(out/'feed.xml',encoding='utf-8',xml_declaration=True)
+ET.indent(news_rss); ET.ElementTree(news_rss).write(out/'news.xml',encoding='utf-8',xml_declaration=True)
 assert len(ET.parse(out/'feed.xml').findall('./channel/item'))==len(issues)
 assert not any(x.name in {'config.json','credentials.json','.env'} for x in out.rglob('*'))
-print(f'Built {len(issues)} digest(s), HTML and full-content RSS. Anchor, link and XML checks passed.')
+assert len(ET.parse(out/'news.xml').findall('./channel/item'))==len(news)
+print(f'Built {len(issues)} digest(s), {len(news)} unique news articles, HTML and two RSS feeds. Checks passed.')

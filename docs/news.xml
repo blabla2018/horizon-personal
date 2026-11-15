@@ -1,0 +1,280 @@
+<?xml version='1.0' encoding='utf-8'?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0">
+  <channel>
+    <title>Мои новости — Horizon</title>
+    <link>https://blabla2018.github.io/horizon-personal/</link>
+    <description>Персональный отбор: одна статья — одна запись. Security, AI и история компьютеров.</description>
+    <language>ru</language>
+    <atom:link href="https://blabla2018.github.io/horizon-personal/news.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Истории создания Norton Commander и Norton Utilities</title>
+      <link>https://t.me/it_secur/5292</link>
+      <pubDate>Sun, 15 Nov 2026 12:00:00 +0100</pubDate>
+      <content:encoded>&lt;p&gt;⭐️ 8.0/10&lt;/p&gt;&lt;p&gt;Пост рассказывает, что Norton Commander создал Джон Соча: его файловый менеджер VDOS вышел под этим названием после того, как Питер Нортон предложил разработчику сотрудничество. Отдельно описана история Norton Utilities: по рассказу автора, после случайного удаления собственной программы Нортон сделал утилиту для восстановления файлов и в 1982 году основал компанию для продажи набора программ. Читатель узнает, как два разных продукта связаны с именем Norton и почему создателя Norton Commander часто называют неверно; подробности о том, что автор обещает словами «не всё так просто», пост не раскрывает.&lt;/p&gt;
+&lt;p&gt;telegram · it_secur · Nov 14, 11:13 · &lt;a href="https://t.me/it_secur/5292"&gt;Открыть пост в Telegram&lt;/a&gt; · &lt;a href="https://t.me/s/it_secur/5292"&gt;Читать в браузере&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tags&lt;/strong&gt;: &lt;code&gt;#история технологий&lt;/code&gt;, &lt;code&gt;#MS-DOS&lt;/code&gt;, &lt;code&gt;#файловые менеджеры&lt;/code&gt;, &lt;code&gt;#ретрокомпьютинг&lt;/code&gt;&lt;/p&gt;</content:encoded>
+      <guid isPermaLink="false">horizon:article:452daee33146e4a0edd7f4c4172fc470e7f9dd02dc28a989c21e8c3cff6e76b9</guid>
+    </item>
+    <item>
+      <title>ICQ: история мессенджера от запуска Mirabilis до закрытия</title>
+      <link>https://t.me/it_secur/5293</link>
+      <pubDate>Sun, 15 Nov 2026 12:00:00 +0100</pubDate>
+      <content:encoded>&lt;p&gt;⭐️ 8.0/10&lt;/p&gt;&lt;p&gt;Пост рассказывает о создании ICQ компанией Mirabilis в 1996 году и связывает название сервиса с фразой «I Seek You», а цветок на логотипе — со статусами пользователей. В нём приведены вехи развития: покупка Mirabilis компанией AOL в 1998 году, последующие смены владельцев и закрытие ICQ 26 июня 2024 года. Автор также описывает, как конкуренция со стороны других мессенджеров и соцсетей сопровождала спад популярности сервиса; этот текст даёт краткую хронологию, но не приводит источников для отдельных утверждений, например о первенстве ICQ.&lt;/p&gt;
+&lt;p&gt;telegram · it_secur · Nov 15, 10:59 · &lt;a href="https://t.me/it_secur/5293"&gt;Открыть пост в Telegram&lt;/a&gt; · &lt;a href="https://t.me/s/it_secur/5293"&gt;Читать в браузере&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tags&lt;/strong&gt;: &lt;code&gt;#история технологий&lt;/code&gt;, &lt;code&gt;#мессенджеры&lt;/code&gt;, &lt;code&gt;#ICQ&lt;/code&gt;, &lt;code&gt;#Mirabilis&lt;/code&gt;&lt;/p&gt;</content:encoded>
+      <guid isPermaLink="false">horizon:article:79ca50bfedf950cc4ffcc22083ec4071e716a5072fc5a82d135515b1bdbbfa5d</guid>
+    </item>
+    <item>
+      <title>Документальный фильм об истории KDE</title>
+      <link>https://tube.kockatoo.org/w/fFinNHfanLT7aBEb2B8y4c</link>
+      <pubDate>Sun, 15 Nov 2026 12:00:00 +0100</pubDate>
+      <content:encoded>&lt;p&gt;⭐️ 8.0/10&lt;/p&gt;&lt;p&gt;Это видео о KDE, свободной настольной среде; описание основано только на названии и предоставленных сведениях, а не на просмотре фильма или его расшифровке. В комментариях пользователи вспоминают ранние этапы проекта и создание базовых компонентов вроде Qt, а также отмечают сложность разработки среды для людей с разными потребностями. Материал может заинтересовать тех, кто хочет узнать об истории KDE и развитии свободного ПО, но подробности фильма по имеющимся данным неизвестны.&lt;/p&gt;
+&lt;p&gt;hackernews · mrkn1 · Nov 14, 13:43 · &lt;a href="https://news.ycombinator.com/item?id=50496976"&gt;Discussion&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tags&lt;/strong&gt;: &lt;code&gt;#история вычислительной техники&lt;/code&gt;, &lt;code&gt;#свободное ПО&lt;/code&gt;, &lt;code&gt;#KDE&lt;/code&gt;, &lt;code&gt;#Linux&lt;/code&gt;&lt;/p&gt;</content:encoded>
+      <guid isPermaLink="false">horizon:article:94b61c00d4a22219feeacd3c5159bf17657c654ef80885279f55c62bd62695cd</guid>
+    </item>
+    <item>
+      <title>13 графических версий Monkey Island рядом</title>
+      <link>https://monkeyisland.pages.dev/</link>
+      <pubDate>Sun, 15 Nov 2026 12:00:00 +0100</pubDate>
+      <content:encoded>&lt;p&gt;⭐️ 8.0/10&lt;/p&gt;&lt;p&gt;Страница показывает рядом 13 версий Monkey Island, позволяя сравнить, как игра выглядела в разных графических вариантах и на разных платформах. Комментаторы вспоминают ограничения CGA и переход к EGA/VGA; это их личные впечатления, а не описание страницы. Материал подойдёт тем, кто хочет наглядно увидеть, как менялась графика классической игры.&lt;/p&gt;
+&lt;p&gt;hackernews · maximilianburke · Nov 14, 04:23 · &lt;a href="https://news.ycombinator.com/item?id=50493904"&gt;Discussion&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tags&lt;/strong&gt;: &lt;code&gt;#история игр&lt;/code&gt;, &lt;code&gt;#ретро-компьютеры&lt;/code&gt;, &lt;code&gt;#DOS&lt;/code&gt;, &lt;code&gt;#Monkey Island&lt;/code&gt;&lt;/p&gt;</content:encoded>
+      <guid isPermaLink="false">horizon:article:0b0494dc95755aafaf1fee4c1428e95ad30718c0624280ef368b1fcb4d20eaad</guid>
+    </item>
+    <item>
+      <title>Обратная разработка микросхемы Signetics ST680A</title>
+      <link>https://www.righto.com/2026/11/signetics-st680a-dtl-nand.html</link>
+      <pubDate>Sun, 15 Nov 2026 12:00:00 +0100</pubDate>
+      <content:encoded>&lt;p&gt;⭐️ 8.0/10&lt;/p&gt;&lt;p&gt;По названию и краткому описанию, материал посвящён обратной разработке винтажной микросхемы Signetics ST680A на диодно-транзисторной логике (DTL). Исходный текст недоступен, поэтому конкретные этапы исследования и технические выводы оценить нельзя; описание основано только на предоставленных метаданных.&lt;/p&gt;
+&lt;p&gt;hackernews · dverlaeckt80 · Nov 8, 19:03 · &lt;a href="https://news.ycombinator.com/item?id=50416011"&gt;Discussion&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tags&lt;/strong&gt;: &lt;code&gt;#история вычислительной техники&lt;/code&gt;, &lt;code&gt;#винтажное железо&lt;/code&gt;, &lt;code&gt;#обратная разработка&lt;/code&gt;, &lt;code&gt;#микросхемы&lt;/code&gt;&lt;/p&gt;</content:encoded>
+      <guid isPermaLink="false">horizon:article:b6567943ec83062513e365d2c2f8111e3ce5f39951d71d0d269f035087de2a2d</guid>
+    </item>
+    <item>
+      <title>Что стало с 3Com — компанией из ранней истории Ethernet</title>
+      <link>https://dfarq.homeip.net/what-happened-to-3com/</link>
+      <pubDate>Sun, 15 Nov 2026 12:00:00 +0100</pubDate>
+      <content:encoded>&lt;p&gt;⭐️ 8.0/10&lt;/p&gt;&lt;p&gt;По заголовку и краткому описанию, материал рассказывает о судьбе 3Com — компании, связанной с ранним развитием Ethernet и сетевых карт. Подробностей статьи в источнике нет, поэтому нельзя уточнить, какие события и этапы её истории автор разбирает.&lt;/p&gt;
+&lt;p&gt;hackernews · gvieri · Nov 13, 23:48 · &lt;a href="https://news.ycombinator.com/item?id=50491830"&gt;Discussion&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tags&lt;/strong&gt;: &lt;code&gt;#история вычислительной техники&lt;/code&gt;, &lt;code&gt;#Ethernet&lt;/code&gt;, &lt;code&gt;#3Com&lt;/code&gt;&lt;/p&gt;</content:encoded>
+      <guid isPermaLink="false">horizon:article:30313b9f0348029e3ed58bb17f785f55d9ca5db54a22703df4c1dfcbdca8bfaa</guid>
+    </item>
+    <item>
+      <title>Импланты для кражи фраз восстановления обнаружены в трёх кошельках Trezor Safe 5</title>
+      <link>https://www.bleepingcomputer.com/news/cryptocurrency/trezor-confirms-crypto-stealing-implants-in-three-wallets-releases-fix/</link>
+      <pubDate>Sun, 15 Nov 2026 12:00:00 +0100</pubDate>
+      <content:encoded>&lt;p&gt;⭐️ 8.0/10&lt;/p&gt;&lt;p&gt;Trezor подтвердила, что три аппаратных кошелька Safe 5, проданные реселлером CryptoBilis в Юго-Восточной Азии, содержали вредоносные импланты. По сообщению, импланты предназначались для кражи фраз восстановления и передачи их злоумышленникам через сотовую сеть; компания выпустила исправление. Материал описывает ограниченный масштаб подтверждённого случая и показывает риск подмены устройств в цепочке поставок.&lt;/p&gt;
+&lt;p&gt;rss · BleepingComputer · Nov 13, 19:38&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tags&lt;/strong&gt;: &lt;code&gt;#кибербезопасность&lt;/code&gt;, &lt;code&gt;#криптовалюты&lt;/code&gt;, &lt;code&gt;#аппаратные кошельки&lt;/code&gt;, &lt;code&gt;#цепочка поставок&lt;/code&gt;&lt;/p&gt;</content:encoded>
+      <guid isPermaLink="false">horizon:article:c47372a64a092875db7e41a51dbc5df37a10bc8ffe5f22bd7800620b243df99b</guid>
+    </item>
+    <item>
+      <title>Уязвимость N-able N-central 4EverAble2Shell эксплуатируют для взлома серверов</title>
+      <link>https://www.bleepingcomputer.com/news/security/new-n-able-4everable2shell-zero-day-exploited-hours-after-poc-released/</link>
+      <pubDate>Sun, 15 Nov 2026 12:00:00 +0100</pubDate>
+      <content:encoded>&lt;p&gt;⭐️ 8.0/10&lt;/p&gt;&lt;p&gt;По сообщению источника, злоумышленники используют уязвимость нулевого дня в N-able N-central, чтобы взламывать серверы и устанавливать майнеры криптовалюты. Исследователи сообщили как минимум о 21 затронутой системе, в том числе о 19 с последним обновлением безопасности. Эти данные указывают, что одного наличия актуального обновления недостаточно, чтобы считать систему незатронутой.&lt;/p&gt;
+&lt;p&gt;rss · BleepingComputer · Nov 12, 19:51&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tags&lt;/strong&gt;: &lt;code&gt;#кибербезопасность&lt;/code&gt;, &lt;code&gt;#уязвимости нулевого дня&lt;/code&gt;, &lt;code&gt;#N-able&lt;/code&gt;, &lt;code&gt;#активная эксплуатация&lt;/code&gt;&lt;/p&gt;</content:encoded>
+      <guid isPermaLink="false">horizon:article:0212533fdc388b5faadf84d0479a62881842d843e285ed9d2fd166a6a578591f</guid>
+    </item>
+    <item>
+      <title>Адаптер для PS1 подключал телефон к интернету</title>
+      <link>https://t.me/it_secur/5274</link>
+      <pubDate>Sun, 15 Nov 2026 12:00:00 +0100</pubDate>
+      <content:encoded>&lt;p&gt;⭐️ 8.0/10&lt;/p&gt;&lt;p&gt;В публикации рассказывается о японском адаптере SCPH-10180k, который в 2001–2002 годах соединял PlayStation 1 с мобильным телефоном. Через него можно было выходить в интернет, работать с электронной почтой и телефонной книгой на экране телевизора, сохранять данные телефона на карту памяти, а в некоторых играх — использовать сетевые функции. Указаны скорость около 9,6 кбит/с и тарифы: 0,3 ¥ за пакет в 128 байт и 300 ¥ в месяц; устройство продавалось только в Японии и теперь считается редкой периферией.&lt;/p&gt;
+&lt;p&gt;telegram · it_secur · Nov 11, 19:37 · &lt;a href="https://t.me/it_secur/5274"&gt;Открыть пост в Telegram&lt;/a&gt; · &lt;a href="https://t.me/s/it_secur/5274"&gt;Читать в браузере&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tags&lt;/strong&gt;: &lt;code&gt;#история вычислительной техники&lt;/code&gt;, &lt;code&gt;#PlayStation&lt;/code&gt;, &lt;code&gt;#ранний интернет&lt;/code&gt;, &lt;code&gt;#мобильная связь&lt;/code&gt;&lt;/p&gt;</content:encoded>
+      <guid isPermaLink="false">horizon:article:3716c36b66332c0ee5a64a700eb894f0c65a0cfc18f4d4c2f1e5b32dea623e3d</guid>
+    </item>
+    <item>
+      <title>Xerox Alto: графический интерфейс, Ethernet и мышь в компьютере 1973 года</title>
+      <link>https://t.me/it_secur/5279</link>
+      <pubDate>Sun, 15 Nov 2026 12:00:00 +0100</pubDate>
+      <content:encoded>&lt;p&gt;⭐️ 8.0/10&lt;/p&gt;&lt;p&gt;Публикация описывает Xerox Alto — компьютер, созданный Xerox в 1973 году для исследовательских лабораторий и университетов и не продававшийся как коммерческий продукт. У него были растровый экран с разрешением 606 × 808 пикселей, трёхкнопочная мышь и Ethernet; около половины памяти занимало обслуживание дисплея, а файлы можно было получать с сетевых серверов. Автор связывает идеи Alto и коммерческой модели Xerox Star с интерфейсами Apple Lisa и Macintosh. В конце упомянуты браузерный эмулятор и ContrAlto — эмулятор на C#.&lt;/p&gt;
+&lt;p&gt;telegram · it_secur · Nov 12, 14:54 · &lt;a href="https://t.me/it_secur/5279"&gt;Открыть пост в Telegram&lt;/a&gt; · &lt;a href="https://t.me/s/it_secur/5279"&gt;Читать в браузере&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tags&lt;/strong&gt;: &lt;code&gt;#история вычислительной техники&lt;/code&gt;, &lt;code&gt;#Xerox Alto&lt;/code&gt;, &lt;code&gt;#графический интерфейс&lt;/code&gt;, &lt;code&gt;#ранние ПК&lt;/code&gt;&lt;/p&gt;</content:encoded>
+      <guid isPermaLink="false">horizon:article:9e64f0de94d9e528862a06268edb603bda30f67cbfac2f2193e6722d2f5f79ac</guid>
+    </item>
+    <item>
+      <title>Seiko TV Watch T001: телевизор на запястье в 1982 году</title>
+      <link>https://t.me/it_secur/5288</link>
+      <pubDate>Sun, 15 Nov 2026 12:00:00 +0100</pubDate>
+      <content:encoded>&lt;p&gt;⭐️ 8.0/10&lt;/p&gt;&lt;p&gt;Пост рассказывает о Seiko TV Watch семейства T001, представленных в 1982 году, и называет DXA001 первой моделью с телевизионным ЖК-экраном на запястье. Миниатюрный монохромный экран размером 25 × 17 мм получал изображение от отдельного карманного приёмника по кабелю; звук можно было слушать через комплектные наушники. В посте также указаны цена DXA001 — 108 000 иен — и появление часов в фильме о Джеймсе Бонде в 1983 году; это необычный пример того, как громоздкую электронику пытались уместить в носимый гаджет.&lt;/p&gt;
+&lt;p&gt;telegram · it_secur · Nov 13, 14:32 · &lt;a href="https://t.me/it_secur/5288"&gt;Открыть пост в Telegram&lt;/a&gt; · &lt;a href="https://t.me/s/it_secur/5288"&gt;Читать в браузере&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tags&lt;/strong&gt;: &lt;code&gt;#история вычислительной техники&lt;/code&gt;, &lt;code&gt;#история электроники&lt;/code&gt;, &lt;code&gt;#гаджеты&lt;/code&gt;&lt;/p&gt;</content:encoded>
+      <guid isPermaLink="false">horizon:article:afefe5426ed05d909c228a654ffa97c0b13c4abcd94231b62df028bd05659fa6</guid>
+    </item>
+    <item>
+      <title>Atari Portfolio в сцене из «Терминатора 2»</title>
+      <link>https://t.me/Social_engineering/4561</link>
+      <pubDate>Sun, 15 Nov 2026 12:00:00 +0100</pubDate>
+      <content:encoded>&lt;p&gt;⭐️ 8.0/10&lt;/p&gt;&lt;p&gt;Автор рассказывает о карманном компьютере Atari Portfolio, который Джон Коннор использует в начале «Терминатора 2» для подбора PIN-кода. По описанию, устройство 1989 года оснащено процессором 80C88, 128 КБ оперативной памяти, экраном 240×64 и DOS-совместимой системой с текстовым редактором и другими встроенными приложениями; система хранится в ПЗУ и не требует загрузки. Материал поможет составить представление о возможностях раннего карманного компьютера и узнать, какое устройство показано в сцене фильма.&lt;/p&gt;
+&lt;p&gt;telegram · Social_engineering · Nov 10, 11:33 · &lt;a href="https://t.me/Social_engineering/4561"&gt;Открыть пост в Telegram&lt;/a&gt; · &lt;a href="https://t.me/s/Social_engineering/4561"&gt;Читать в браузере&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tags&lt;/strong&gt;: &lt;code&gt;#история вычислительной техники&lt;/code&gt;, &lt;code&gt;#ретрокомпьютеры&lt;/code&gt;, &lt;code&gt;#Atari Portfolio&lt;/code&gt;, &lt;code&gt;#кино&lt;/code&gt;&lt;/p&gt;</content:encoded>
+      <guid isPermaLink="false">horizon:article:d0b388a07babe15e5337a0f67ce87fce02816f0a9d3370b16a0d06386735b950</guid>
+    </item>
+    <item>
+      <title>TinyRetroPad: текстовый редактор Windows на ассемблере размером 2476 байт</title>
+      <link>https://t.me/Social_engineering/4563</link>
+      <pubDate>Sun, 15 Nov 2026 12:00:00 +0100</pubDate>
+      <content:encoded>&lt;p&gt;⭐️ 8.0/10&lt;/p&gt;&lt;p&gt;Бывший инженер Microsoft Дэйв Пламмер опубликовал TinyRetroPad — небольшой текстовый редактор для Windows, написанный на ассемблере и занимающий около 2476 байт. По описанию проекта, он использует системные компоненты Windows и класс RichEdit, а среди функций есть открытие и сохранение файлов, поиск и замена, печать, выбор шрифта и строка состояния. В журнале в начале файла trpad.asm указана стоимость добавленных функций в байтах — проект может заинтересовать тех, кто изучает компактные программы и оптимизацию под WinAPI.&lt;/p&gt;
+&lt;p&gt;telegram · Social_engineering · Nov 11, 13:33 · &lt;a href="https://t.me/Social_engineering/4563"&gt;Открыть пост в Telegram&lt;/a&gt; · &lt;a href="https://t.me/s/Social_engineering/4563"&gt;Читать в браузере&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tags&lt;/strong&gt;: &lt;code&gt;#история вычислительной техники&lt;/code&gt;, &lt;code&gt;#Windows&lt;/code&gt;, &lt;code&gt;#ассемблер&lt;/code&gt;, &lt;code&gt;#GitHub&lt;/code&gt;&lt;/p&gt;</content:encoded>
+      <guid isPermaLink="false">horizon:article:7c7f42ee347c793f09de6db6f0d81ec9e93c5eb14cebbb2ab110540a0778ebe8</guid>
+    </item>
+    <item>
+      <title>Drift Inspector группирует научные идеи в 118 тысячах статей</title>
+      <link>https://t.me/data_secrets/10327</link>
+      <pubDate>Sun, 15 Nov 2026 12:00:00 +0100</pubDate>
+      <content:encoded>&lt;p&gt;⭐️ 7.0/10&lt;/p&gt;&lt;p&gt;AIRI и Сколтех представили Drift Inspector — систему, которая извлекает из аннотаций утверждения о научном вкладе и объединяет похожие идеи, а не просто считает ключевые слова. Команда обработала 118 тысяч статей с конференций по машинному обучению, компьютерному зрению и обработке языка за 2018–2026 годы; долю публикаций с каждой темой рассчитывают отдельно по годам. Описание также сообщает, что кластеризацию сверяли с внешней таксономией, а качество извлечения оценивали с помощью валидированного ИИ-судьи, но подробных результатов проверки не приводит. Материал пригодится тем, кто хочет понять, как инструмент группирует разные формулировки одной идеи и оценивает динамику научных тем.&lt;/p&gt;
+&lt;p&gt;telegram · data_secrets · Nov 12, 15:02 · &lt;a href="https://t.me/data_secrets/10327"&gt;Открыть пост в Telegram&lt;/a&gt; · &lt;a href="https://t.me/s/data_secrets/10327"&gt;Читать в браузере&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tags&lt;/strong&gt;: &lt;code&gt;#искусственный интеллект&lt;/code&gt;, &lt;code&gt;#машинное обучение&lt;/code&gt;, &lt;code&gt;#научные исследования&lt;/code&gt;, &lt;code&gt;#анализ данных&lt;/code&gt;, &lt;code&gt;#инструменты&lt;/code&gt;&lt;/p&gt;</content:encoded>
+      <guid isPermaLink="false">horizon:article:a58a725af7c4e8762bc817752f7eb037656f8234d67aa612bc720ef13f5b7fc0</guid>
+    </item>
+    <item>
+      <title>Project Zero вводит 90-дневный срок раскрытия уязвимостей</title>
+      <link>https://projectzero.google/2026/11/disclosure-policy.html</link>
+      <pubDate>Sun, 15 Nov 2026 12:00:00 +0100</pubDate>
+      <content:encoded>&lt;p&gt;⭐️ 7.0/10&lt;/p&gt;&lt;p&gt;Согласно приведённому в обсуждении объявлению, Project Zero начинает раскрывать уязвимости через 90 дней после уведомления поставщика; далее политика предусматривает переход к срокам в 60 дней с 2 февраля 2027 года и в 30 дней с 3 января 2028 года. Участники Hacker News сомневаются, что поставщики успеют подготовить и распространить исправления в такие сроки, в частности для Android и Ubuntu. Обсуждение помогает увидеть возможную практическую проблему политики, но исходный текст объявления в предоставленных материалах отсутствует.&lt;/p&gt;
+&lt;p&gt;hackernews · hacb · Nov 14, 11:13 · &lt;a href="https://news.ycombinator.com/item?id=50496051"&gt;Discussion&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tags&lt;/strong&gt;: &lt;code&gt;#кибербезопасность&lt;/code&gt;, &lt;code&gt;#уязвимости&lt;/code&gt;, &lt;code&gt;#раскрытие уязвимостей&lt;/code&gt;, &lt;code&gt;#Google Project Zero&lt;/code&gt;&lt;/p&gt;</content:encoded>
+      <guid isPermaLink="false">horizon:article:bd2f75c9c0c3d17ff890ae7b17da4a62ae4003aed062aff8f379f72500055160</guid>
+    </item>
+    <item>
+      <title>EFF добивается требования ордера для поиска по данным ALPR</title>
+      <link>https://www.eff.org/deeplinks/2026/11/were-asking-appeals-court-require-warrant-alpr-searches</link>
+      <pubDate>Sun, 15 Nov 2026 12:00:00 +0100</pubDate>
+      <content:encoded>&lt;p&gt;⭐️ 7.0/10&lt;/p&gt;&lt;p&gt;EFF просит апелляционный суд признать поиск по данным автоматического распознавания номерных знаков (ALPR) обыском, для которого нужен ордер. Организация ссылается на обширную взаимосвязанную сеть камер, отслеживающую автомобили; в материалах здесь нет подробностей дела или позиции суда. Читатель узнает, какой правовой подход EFF предлагает применить к поиску по таким данным.&lt;/p&gt;
+&lt;p&gt;hackernews · nobody9999 · Nov 15, 02:00 · &lt;a href="https://news.ycombinator.com/item?id=50503255"&gt;Discussion&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tags&lt;/strong&gt;: &lt;code&gt;#приватность&lt;/code&gt;, &lt;code&gt;#слежка&lt;/code&gt;, &lt;code&gt;#ALPR&lt;/code&gt;, &lt;code&gt;#право&lt;/code&gt;&lt;/p&gt;</content:encoded>
+      <guid isPermaLink="false">horizon:article:c63bed41afc17c4d3fe63eff49bf283ad84fd5abec5067aba67983716a604f8c</guid>
+    </item>
+    <item>
+      <title>LinkedIn и Monster удалили более 1000 фальшивых вакансий после расследования CBC</title>
+      <link>https://www.cbc.ca/news/canada/linkedin-monster-take-down-over-1-000-fake-job-postings-after-cbc-investigation-9.7415379</link>
+      <pubDate>Sun, 15 Nov 2026 12:00:00 +0100</pubDate>
+      <content:encoded>&lt;p&gt;⭐️ 7.0/10&lt;/p&gt;&lt;p&gt;Согласно заголовку, после расследования CBC LinkedIn и Monster удалили более 1000 объявлений о фальшивых вакансиях. Исходный текст расследования недоступен, поэтому его методы и подробности неизвестны; материал может быть полезен тем, кто хочет узнать о проблеме мошеннических вакансий на платформах поиска работы.&lt;/p&gt;
+&lt;p&gt;hackernews · gnabgib · Nov 14, 18:56 · &lt;a href="https://news.ycombinator.com/item?id=50499723"&gt;Discussion&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tags&lt;/strong&gt;: &lt;code&gt;#кибербезопасность&lt;/code&gt;, &lt;code&gt;#мошенничество&lt;/code&gt;, &lt;code&gt;#социальная инженерия&lt;/code&gt;, &lt;code&gt;#фишинговые вакансии&lt;/code&gt;&lt;/p&gt;</content:encoded>
+      <guid isPermaLink="false">horizon:article:42d72770109f72d934978f3e6186feae6915fac4068ae97c3909d28237398e5d</guid>
+    </item>
+    <item>
+      <title>Энергозатраты генеративного ИИ на разных языках</title>
+      <link>https://news.umich.edu/generative-ai-uses-more-energy-on-non-english-text/</link>
+      <pubDate>Sun, 15 Nov 2026 12:00:00 +0100</pubDate>
+      <content:encoded>&lt;p&gt;⭐️ 7.0/10&lt;/p&gt;&lt;p&gt;Согласно пересказу исследования в комментариях, авторы сравнили энергопотребление и точность трёх открытых моделей — Qwen 3, Gemma 3 и Llama 3.1 — на текстах разных языков. У некоторых языков затраты были выше; комментаторы связывают особенно резкие выбросы с повторяющейся генерацией, но подробности статьи в предоставленном материале отсутствуют. Обсуждение также предлагает токенизацию как возможный фактор, однако это мнение участника, а не подтверждённый здесь вывод исследования.&lt;/p&gt;
+&lt;p&gt;hackernews · DeepLogin · Nov 10, 15:07 · &lt;a href="https://news.ycombinator.com/item?id=50441444"&gt;Discussion&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tags&lt;/strong&gt;: &lt;code&gt;#ИИ&lt;/code&gt;, &lt;code&gt;#энергопотребление&lt;/code&gt;, &lt;code&gt;#многоязычные модели&lt;/code&gt;, &lt;code&gt;#исследование&lt;/code&gt;&lt;/p&gt;</content:encoded>
+      <guid isPermaLink="false">horizon:article:491f8d171c272620910c10d47dd77e7f01112e1d5725f272b9085b994d738116</guid>
+    </item>
+    <item>
+      <title>EFF критикует попытки технологических компаний переопределить приватность</title>
+      <link>https://www.eff.org/deeplinks/2026/11/tech-companies-are-trying-shift-entire-concept-privacy-again</link>
+      <pubDate>Sun, 15 Nov 2026 12:00:00 +0100</pubDate>
+      <content:encoded>&lt;p&gt;⭐️ 7.0/10&lt;/p&gt;&lt;p&gt;По заголовку и краткому описанию, EFF критикует попытки технологических компаний изменить само понимание приватности; текста статьи в источнике нет, поэтому оценить её аргументы нельзя. В комментариях читатели обсуждают, что ИИ-сервисы могут записывать и загружать рабочие встречи, включая разговоры один на один, и спрашивают, как отказаться от расшифровки. Другие комментаторы упоминают локальную обработку как способ не сохранять и не экспортировать записи, но отмечают риск последующего хранения данных.&lt;/p&gt;
+&lt;p&gt;hackernews · gslin · Nov 14, 12:45 · &lt;a href="https://news.ycombinator.com/item?id=50496602"&gt;Discussion&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tags&lt;/strong&gt;: &lt;code&gt;#приватность&lt;/code&gt;, &lt;code&gt;#ИИ&lt;/code&gt;, &lt;code&gt;#цифровые права&lt;/code&gt;&lt;/p&gt;</content:encoded>
+      <guid isPermaLink="false">horizon:article:b12dd6d77c3d420a7a795870cfed6e5cc76de3ccbc2428e463bb2dc624df3c5a</guid>
+    </item>
+    <item>
+      <title>Утечка паспортных данных и личных сообщений в приложениях Lovable</title>
+      <link>https://www.crissyfield.de/research/lovable-en/</link>
+      <pubDate>Sun, 15 Nov 2026 12:00:00 +0100</pubDate>
+      <content:encoded>&lt;p&gt;⭐️ 7.0/10&lt;/p&gt;&lt;p&gt;В заголовке исследования заявлены раскрытие паспортных данных и более 200 тысяч личных сообщений в приложениях, созданных на Lovable. Руководитель безопасности Lovable связывает проблему с недостаточно настроенной Row-Level Security (RLS); он также описывает автоматическое сканирование приложений и инструменты исправления, предлагаемые платформой. Подробности исследования в предоставленном материале отсутствуют, поэтому оценить масштаб и обстоятельства утечки по нему нельзя.&lt;/p&gt;
+&lt;p&gt;hackernews · armcat · Nov 14, 17:43 · &lt;a href="https://news.ycombinator.com/item?id=50499017"&gt;Discussion&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tags&lt;/strong&gt;: &lt;code&gt;#кибербезопасность&lt;/code&gt;, &lt;code&gt;#утечка данных&lt;/code&gt;, &lt;code&gt;#Lovable&lt;/code&gt;, &lt;code&gt;#Supabase&lt;/code&gt;, &lt;code&gt;#Row-Level Security&lt;/code&gt;&lt;/p&gt;</content:encoded>
+      <guid isPermaLink="false">horizon:article:c3342fe5a033ee5fac66d91959cf76bb416a45041412dfa0113f7f322f0a0b1e</guid>
+    </item>
+    <item>
+      <title>ggml v1.0.0: эксперты MoE в памяти хоста</title>
+      <link>https://github.com/ggml-org/ggml/releases/tag/v1.0.0</link>
+      <pubDate>Sun, 15 Nov 2026 12:00:00 +0100</pubDate>
+      <content:encoded>&lt;p&gt;⭐️ 7.0/10&lt;/p&gt;&lt;p&gt;В обсуждении релиза ggml v1.0.0 отмечают, что llama.cpp и ggml могут размещать редко используемых экспертов модели MoE в оперативной памяти хоста, если модель немного превышает доступную видеопамять, вместо отказа при загрузке. Один пользователь также сообщил, что после обновления его тест обработки длинного промпта ускорился с 4:22 до 3:59; это личный результат, а не подтверждение общего прироста скорости. В описании релиза на странице GitHub подробностей нет, поэтому эти сведения основаны на комментариях Hacker News.&lt;/p&gt;
+&lt;p&gt;hackernews · cobychapple · Nov 14, 02:28 · &lt;a href="https://news.ycombinator.com/item?id=50493062"&gt;Discussion&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tags&lt;/strong&gt;: &lt;code&gt;#ИИ&lt;/code&gt;, &lt;code&gt;#ggml&lt;/code&gt;, &lt;code&gt;#локальный инференс&lt;/code&gt;, &lt;code&gt;#MoE&lt;/code&gt;, &lt;code&gt;#производительность&lt;/code&gt;&lt;/p&gt;</content:encoded>
+      <guid isPermaLink="false">horizon:article:22f7de6935dc23ea503f1c9ea8a277145ed787ccf6b54824c59717b768db4e91</guid>
+    </item>
+    <item>
+      <title>Обратная разработка очистителя Coway для отказа от облака</title>
+      <link>https://scottjg.com/posts/2026-11-11-reverse-engineering-my-coway-air-purifier-to-ditch-the-cloud/</link>
+      <pubDate>Sun, 15 Nov 2026 12:00:00 +0100</pubDate>
+      <content:encoded>&lt;p&gt;⭐️ 7.0/10&lt;/p&gt;&lt;p&gt;Автор описывает реверс-инжиниринг очистителя воздуха Coway, чтобы отвязать его от облачного сервиса. Текст статьи не предоставлен, поэтому детали метода и результат проверить нельзя. В комментарии участник Hacker News утверждает, что устройство загружает корневой сертификат по HTTP и потому подвержено атаке посредника; это заявление комментатора, а не подтверждённый здесь факт.&lt;/p&gt;
+&lt;p&gt;hackernews · scottjg · Nov 12, 22:03 · &lt;a href="https://news.ycombinator.com/item?id=50474959"&gt;Discussion&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tags&lt;/strong&gt;: &lt;code&gt;#IoT&lt;/code&gt;, &lt;code&gt;#приватность&lt;/code&gt;, &lt;code&gt;#обратная разработка&lt;/code&gt;, &lt;code&gt;#умный дом&lt;/code&gt;, &lt;code&gt;#безопасность&lt;/code&gt;&lt;/p&gt;</content:encoded>
+      <guid isPermaLink="false">horizon:article:cf14d9f186a2331efa8b9e730b168c6153bb5b533146164af53e8e7d95c4e71f</guid>
+    </item>
+    <item>
+      <title>Ошибки безопасности памяти в стандартной библиотеке Rust</title>
+      <link>https://forge-blog.github.io/posts/rust-std-memory-safety/</link>
+      <pubDate>Sun, 15 Nov 2026 12:00:00 +0100</pubDate>
+      <content:encoded>&lt;p&gt;⭐️ 7.0/10&lt;/p&gt;&lt;p&gt;Материал посвящён ошибкам безопасности памяти в стандартной библиотеке Rust, но текста статьи в предоставленных данных нет, поэтому конкретные находки и их последствия оценить нельзя. В комментариях участник приводит число открытых issues с меткой I-unsound в проекте Rust и отмечает, что некоторые ошибки могут попасть в выпуски; это контекст из обсуждения, а не описание находок статьи. Читатель сможет понять тему публикации, но для деталей об ошибках и их влиянии потребуется открыть сам материал.&lt;/p&gt;
+&lt;p&gt;hackernews · pjmlp · Nov 13, 05:22 · &lt;a href="https://news.ycombinator.com/item?id=50478701"&gt;Discussion&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tags&lt;/strong&gt;: &lt;code&gt;#кибербезопасность&lt;/code&gt;, &lt;code&gt;#Rust&lt;/code&gt;, &lt;code&gt;#безопасность памяти&lt;/code&gt;, &lt;code&gt;#анализ&lt;/code&gt;&lt;/p&gt;</content:encoded>
+      <guid isPermaLink="false">horizon:article:5560824566eec099affad1473c91648fae04879e64e05ff24254735ebb18b452</guid>
+    </item>
+    <item>
+      <title>Обход защиты буфера обмена в Android</title>
+      <link>https://toninoble.com/post/ctrlc-ctrlv-ctrlcve</link>
+      <pubDate>Sun, 15 Nov 2026 12:00:00 +0100</pubDate>
+      <content:encoded>&lt;p&gt;⭐️ 7.0/10&lt;/p&gt;&lt;p&gt;По предоставленному описанию, статья рассматривает способ обхода защитных мер Android, ограничивающих приложениям доступ к буферу обмена. Технические детали и масштаб проблемы в доступных данных не раскрыты; описание основано на заголовке и кратком пересказе, а не на полном тексте статьи.&lt;/p&gt;
+&lt;p&gt;hackernews · dethmasque · Nov 13, 18:23 · &lt;a href="https://news.ycombinator.com/item?id=50487605"&gt;Discussion&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tags&lt;/strong&gt;: &lt;code&gt;#кибербезопасность&lt;/code&gt;, &lt;code&gt;#Android&lt;/code&gt;, &lt;code&gt;#приватность&lt;/code&gt;, &lt;code&gt;#буфер обмена&lt;/code&gt;&lt;/p&gt;</content:encoded>
+      <guid isPermaLink="false">horizon:article:61e70c457c4d9522d4b81e51383d799ddb127d009d5da13921c87f3111b4acff</guid>
+    </item>
+    <item>
+      <title>SignDrop позволяет повысить права в Windows до уровня System</title>
+      <link>https://arstechnica.com/security/2026/11/windows-0-day-dropped-by-disgruntled-researcher-hands-hackers-system-rights/</link>
+      <pubDate>Sun, 15 Nov 2026 12:00:00 +0100</pubDate>
+      <content:encoded>&lt;p&gt;⭐️ 7.0/10&lt;/p&gt;&lt;p&gt;По сообщению Ars Technica, исследователь Nightmare Eclipse раскрыл уязвимость SignDrop: локальный пользователь с обычными правами может получить права System на некоторых версиях Windows. Атака использует обработку Windows Defender специально созданного контейнера CLFS и связанную с этим обработку файла с повышенными привилегиями. В доступном фрагменте не указаны затронутые версии Windows, наличие исправления или подтверждённое использование уязвимости злоумышленниками.&lt;/p&gt;
+&lt;p&gt;rss · Ars Technica — Technology Lab · Nov 13, 16:26&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tags&lt;/strong&gt;: &lt;code&gt;#кибербезопасность&lt;/code&gt;, &lt;code&gt;#Windows&lt;/code&gt;, &lt;code&gt;#уязвимость нулевого дня&lt;/code&gt;, &lt;code&gt;#повышение привилегий&lt;/code&gt;&lt;/p&gt;</content:encoded>
+      <guid isPermaLink="false">horizon:article:728d91208d49dea51a0f8fd719247b69c0a73204ced98114633b521243907b32</guid>
+    </item>
+    <item>
+      <title>Уязвимость в ссылках Grok Build открыла доступ к тысячам проектов</title>
+      <link>https://arstechnica.com/security/2026/11/grok-build-coding-agent-leaks-oodles-of-confidential-info-some-belonging-to-spacexsi/</link>
+      <pubDate>Sun, 15 Nov 2026 12:00:00 +0100</pubDate>
+      <content:encoded>&lt;p&gt;⭐️ 7.0/10&lt;/p&gt;&lt;p&gt;По исследованию фирмы Claroc, ошибку в механизме ссылок для общего доступа к приложениям Grok Build можно использовать, чтобы перебирать адреса и находить тысячи активных проектов; открыв ссылку, обычно можно увидеть связанные с проектом данные. Среди обнаруженного — бизнес-планы, рекламные предложения, медицинские результаты и сведения о сотрудниках. Claroc также нашла 24 приложения SpaceXSI с внутренними материалами, включая конфиденциальный план адаптации сотрудника и карту 594 клиентских аккаунтов.&lt;/p&gt;
+&lt;p&gt;rss · Ars Technica — Technology Lab · Nov 10, 21:12&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tags&lt;/strong&gt;: &lt;code&gt;#кибербезопасность&lt;/code&gt;, &lt;code&gt;#утечка данных&lt;/code&gt;, &lt;code&gt;#ИИ-инструменты&lt;/code&gt;, &lt;code&gt;#конфиденциальность&lt;/code&gt;&lt;/p&gt;</content:encoded>
+      <guid isPermaLink="false">horizon:article:80500b1292cc170c8e32784d657cf231b10ce1c395a57b1777d7f0eaefb6ef58</guid>
+    </item>
+    <item>
+      <title>Уязвимость *sshole используют для атак на Linux-системы</title>
+      <link>https://arstechnica.com/security/2026/11/vulnerability-that-lets-hackers-ssh-into-linux-devices-is-under-active-exploitation/</link>
+      <pubDate>Sun, 15 Nov 2026 12:00:00 +0100</pubDate>
+      <content:encoded>&lt;p&gt;⭐️ 7.0/10&lt;/p&gt;&lt;p&gt;Статья сообщает об активной эксплуатации *sshole — уязвимости во взаимодействии OpenSSH и библиотеки musl, которая при выполнении дополнительных условий может дать неаутентифицированный доступ к привилегированным учётным записям Linux за секунды. По данным компании Greynoise, её приманки в Юго-Восточной Азии атаковала группа GT10; исследователи также получили доступ к серверу группы и обнаружили потенциальных жертв и инструменты кампании. В статье отмечается, что бэкдор содержит комментарии на китайском языке и, по видимым признакам, мог быть создан с помощью ИИ; масштабы реальных компрометаций в приведённом фрагменте не указаны.&lt;/p&gt;
+&lt;p&gt;rss · Ars Technica — Technology Lab · Nov 9, 19:41&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tags&lt;/strong&gt;: &lt;code&gt;#кибербезопасность&lt;/code&gt;, &lt;code&gt;#уязвимости&lt;/code&gt;, &lt;code&gt;#Linux&lt;/code&gt;, &lt;code&gt;#OpenSSH&lt;/code&gt;, &lt;code&gt;#активная эксплуатация&lt;/code&gt;&lt;/p&gt;</content:encoded>
+      <guid isPermaLink="false">horizon:article:eb9aae20ddecf55386a0dee9a787ec83aa86e62ece9bd3ac60a38d030d1b404b</guid>
+    </item>
+    <item>
+      <title>Атака BlackNevas на ESXi и vCenter через штатные интерфейсы управления</title>
+      <link>https://securelist.ru/esxi-ransomware/117734/</link>
+      <pubDate>Sun, 15 Nov 2026 12:00:00 +0100</pubDate>
+      <content:encoded>&lt;p&gt;⭐️ 7.0/10&lt;/p&gt;&lt;p&gt;GERT расследовала десятидневную атаку на виртуализированную инфраструктуру: она затронула четыре хоста ESXi, размещённые на них виртуальные машины, два экземпляра vCenter и подключённые резервные копии. По данным статьи, злоумышленники не использовали уязвимости виртуализации, а выполняли вредоносные действия через легитимные интерфейсы управления VMware; сообщения о выкупе указывали на BlackNevas. Разбор объясняет, почему средства EDR внутри гостевых ОС могут не видеть операции на уровне гипервизора, и рассказывает о путях проникновения, восстановлении хронологии по логам и индикаторах компрометации.&lt;/p&gt;
+&lt;p&gt;rss · Securelist · Nov 13, 09:00&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tags&lt;/strong&gt;: &lt;code&gt;#кибербезопасность&lt;/code&gt;, &lt;code&gt;#вымогательское ПО&lt;/code&gt;, &lt;code&gt;#ESXi&lt;/code&gt;, &lt;code&gt;#vCenter&lt;/code&gt;, &lt;code&gt;#инцидент&lt;/code&gt;&lt;/p&gt;</content:encoded>
+      <guid isPermaLink="false">horizon:article:fc7513bfed953e954584e63096763cbaf5fff8746ab40e58259d9a2aa01b7214</guid>
+    </item>
+    <item>
+      <title>Citrus Ransomware: атаки через подрядчиков и эксплуатация Certighost</title>
+      <link>https://securelist.ru/citrus-ransomware/117647/</link>
+      <pubDate>Sun, 15 Nov 2026 12:00:00 +0100</pubDate>
+      <content:encoded>&lt;p&gt;⭐️ 7.0/10&lt;/p&gt;&lt;p&gt;Авторы Securelist описывают тактики группы Citrus: первоначальный доступ через украденные данные сотрудников подрядчиков для подключения по VPN или RDP, а затем развитие атаки с помощью PowerShell, Impacket и запланированных задач. По их наблюдениям, злоумышленники применяли LLM для генерации команд и сценариев; авторы связывают это с комментариями в коде, характерными для языковых моделей. В статье также разобран способ эксплуатации CVE-2026-54121 в AD CS, позволяющий получить сертификат для аутентификации от имени контроллера домена; читатель узнает конкретные признаки и этапы описанных атак.&lt;/p&gt;
+&lt;p&gt;rss · Securelist · Nov 11, 10:00&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tags&lt;/strong&gt;: &lt;code&gt;#кибербезопасность&lt;/code&gt;, &lt;code&gt;#вымогатели&lt;/code&gt;, &lt;code&gt;#VLESS&lt;/code&gt;, &lt;code&gt;#LLM&lt;/code&gt;&lt;/p&gt;</content:encoded>
+      <guid isPermaLink="false">horizon:article:614beeb5a33105a5523c9cbee41442b8a4843d4e2485d6f9bee1b26da0d47ab3</guid>
+    </item>
+    <item>
+      <title>Фишинговая кампания Arra Ghouls против организаций в России и Беларуси</title>
+      <link>https://securelist.ru/tr/new-cyber-threat-arra-ghouls-attacks-russian-organizations/117588/</link>
+      <pubDate>Sun, 15 Nov 2026 12:00:00 +0100</pubDate>
+      <content:encoded>&lt;p&gt;⭐️ 7.0/10&lt;/p&gt;&lt;p&gt;По данным Kaspersky, с апреля 2026 года группировка Arra Ghouls (также Mimbrob) атаковала 18 организаций в России и Беларуси, включая компании из телекоммуникационного, промышленного, ИТ-, финансового и коммерческого секторов. Для заражения использовались письма с поддельных доменов и фишинговые сайты; вредоносные цепочки включали DLL-дропперы, RAT на Go и фреймворки Havoc, RootRat и Metasploit. Разбор показывает, как дроппер проверяет региональные настройки и права администратора, а также какие приманки применялись; он может быть полезен специалистам для анализа похожих писем и файлов.&lt;/p&gt;
+&lt;p&gt;rss · Securelist · Nov 9, 09:00&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tags&lt;/strong&gt;: &lt;code&gt;#кибербезопасность&lt;/code&gt;, &lt;code&gt;#фишинг&lt;/code&gt;, &lt;code&gt;#киберпреступность&lt;/code&gt;, &lt;code&gt;#Россия&lt;/code&gt;, &lt;code&gt;#Беларусь&lt;/code&gt;&lt;/p&gt;</content:encoded>
+      <guid isPermaLink="false">horizon:article:04ada100ba71e63ab603163999dfc024934eb28d3eb5b105e39e8429a9dde2c4</guid>
+    </item>
+  </channel>
+</rss>
