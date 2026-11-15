@@ -8,7 +8,7 @@ such as "Weekly roundup", "Reading digest", "Еженедельная подбо
 
 The summary block should use 2-4 concise complete sentences: what the source says,
 the concrete fact or idea it offers, and what the reader can learn or use, where
-supported. Cover science, sport, chess and education as naturally as technology.
+supported. Prioritize concrete security/AI facts and interesting computing-history details.
 Avoid generic claims about importance and invented background. Distinguish facts,
 author opinion, promotional claims and uncertainty. If the source is thin, be brief.
 

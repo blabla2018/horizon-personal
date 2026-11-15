@@ -1,8 +1,8 @@
 {
   "id": "personal-reading",
-  "name": "Личная подборка",
+  "name": "Security, AI и история технологий",
   "display_names": {
-    "ru": "Личная подборка"
+    "ru": "Security, AI и история технологий"
   },
   "match": "match.md",
   "analysis": "analysis.md",
@@ -16,5 +16,10 @@
         "primary": true
       }
     ]
+  },
+  "content": {
+    "analysis_max_chars": 8000,
+    "enrichment_max_chars": 8000,
+    "sampling": "head-middle-tail"
   }
 }

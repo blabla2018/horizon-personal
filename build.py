@@ -29,7 +29,7 @@ p{margin:12px 0 20px}blockquote{border-left:3px solid var(--accent);padding-left
 '''
 
 def page(title, body):
-    return f'''<!doctype html><html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex"><title>{html.escape(title)}</title><link rel="alternate" type="application/rss+xml" title="Мои дайджесты — Horizon" href="{ORIGIN}/feed.xml"><style>{CSS}</style></head><body id="top"><header><div class="eyebrow">Horizon · личное чтение</div><nav><a href="{ORIGIN}/">Все выпуски</a><a href="{ORIGIN}/feed.xml">RSS для Inoreader</a></nav></header><main>{body}</main><footer>Аннотации подготовлены ИИ по материалам источников. Проверяйте важные факты по оригиналам.<br>Обновление: вторник и пятница, 12:00 · Europe/Madrid.</footer><a class="top" href="#top" aria-label="К началу страницы">↑ Наверх</a></body></html>'''
+    return f'''<!doctype html><html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex"><title>{html.escape(title)}</title><link rel="alternate" type="application/rss+xml" title="Мои дайджесты — Horizon" href="{ORIGIN}/feed.xml"><style>{CSS}</style></head><body id="top"><header><div class="eyebrow">Horizon · Security, AI и история технологий</div><nav><a href="{ORIGIN}/">Все выпуски</a><a href="{ORIGIN}/feed.xml">RSS для Inoreader</a></nav></header><main>{body}</main><footer>Аннотации подготовлены ИИ по материалам источников. Проверяйте важные факты по оригиналам.<br>Обновление: пятница, 12:00 · Europe/Madrid.</footer><a class="top" href="#top" aria-label="К началу страницы">↑ Наверх</a></body></html>'''
 
 class Links(HTMLParser):
     def __init__(self):
@@ -48,7 +48,7 @@ out=ROOT/'docs'; out.mkdir(exist_ok=True)
 ET.register_namespace('content','http://purl.org/rss/1.0/modules/content/')
 ET.register_namespace('atom','http://www.w3.org/2005/Atom')
 rss=ET.Element('rss',version='2.0'); channel=ET.SubElement(rss,'channel')
-for name,value in [('title','Мои дайджесты — Horizon'),('link',ORIGIN+'/'),('description','Личные недельные подборки: технологии, безопасность, наука, спорт и обучение.'),('language','ru')]:
+for name,value in [('title','Мои дайджесты — Horizon'),('link',ORIGIN+'/'),('description','Security, AI и история компьютеров: до 30 материалов за неделю.'),('language','ru')]:
     ET.SubElement(channel,name).text=value
 ET.SubElement(channel,'{http://www.w3.org/2005/Atom}link',href=ORIGIN+'/feed.xml',rel='self',type='application/rss+xml')
 issues=[]
@@ -57,27 +57,27 @@ for source in sorted((HORIZON/'data/summaries').glob('horizon-????-??-??-ru.md')
     text=source.read_text()
     count=len(re.findall(r'^<a id="item-',text,re.M))
     title=f'Подборка за неделю · {date}'
-    text=re.sub(r'^# Horizon Daily[^\n]*', '# '+title,text,count=1)
-    text=re.sub(r'^> From \d+ items, \d+ important content pieces were selected',f'> {count} публикаций со ссылками на оригиналы',text,flags=re.M)
+    # The Markdown preamble repeats headings and contains a long TOC. Export articles only.
+    text=text[text.index('<a id="item-'):]
     text=re.sub(r'^<a id="([a-zA-Z0-9-]+)"></a>$',r'ANCHORPLACEHOLDER-\1-END',text,flags=re.M)
-    body=_render_email_markdown(_prepare_email_markdown(text))
-    body=re.sub(r'<p>ANCHORPLACEHOLDER-([a-zA-Z0-9-]+)-END</p>',r'<a id="\1"></a>',body)
-    body=body.replace('<ol>','<details><summary>Содержание · '+str(count)+' публикаций</summary><ol>',1).replace('</ol>','</ol></details>',1)
-    assert not count or '<details><summary>Содержание' in body, 'Missing table of contents'
+    articles=_render_email_markdown(_prepare_email_markdown(text))
+    articles=re.sub(r'<p>ANCHORPLACEHOLDER-([a-zA-Z0-9-]+)-END</p>',r'<a id="\1"></a>',articles)
+    body=f'<h1>{html.escape(title)}</h1><p class="meta">{count} публикаций со ссылками на оригиналы</p>'+articles
     check=Links();check.feed(body)
     assert all(link[1:] in check.ids for link in check.hrefs if link.startswith('#'))
     filename=source.stem+'.html'; url=ORIGIN+'/'+filename
     (out/filename).write_text(page(title,body))
-    # RSS contains full text; omit the large table of contents and use absolute links.
-    feed_body=re.sub(r'<details><summary>Содержание.*?</details>','',body,count=1,flags=re.S)
-    feed_body=re.sub(r'href="#([^\"]+)"',lambda m:'href="'+url+'#'+m[1]+'"',feed_body)
+    # RSS readers supply the title themselves; include only the actual articles.
+    feed_body=articles
+    assert '<details>' not in feed_body and 'Личная подборка' not in feed_body
     item=ET.SubElement(channel,'item')
     for name,value in [('title',title),('link',url),('description',f'{count} публикаций: короткие аннотации и ссылки на оригиналы.'),('pubDate',format_datetime(datetime.fromtimestamp(source.stat().st_mtime,timezone.utc))),('{http://purl.org/rss/1.0/modules/content/}encoded',feed_body)]:
         ET.SubElement(item,name).text=value
-    ET.SubElement(item,'guid',isPermaLink='true').text=url
+    # New edition namespace lets readers receive this focused issue alongside the old broad trial.
+    ET.SubElement(item,'guid',isPermaLink='false').text='horizon:security-ai-history:'+date
     issues.append(f'<section class="issue"><div class="meta">{date} · {count} публикаций</div><a href="{url}">Подборка за неделю</a><p class="meta">Короткие аннотации и ссылки на оригинальные статьи.</p></section>')
 assert issues, 'No digests found'
-(out/'index.html').write_text(page('Мои дайджесты', '<h1>Читать то,<br>что интересно.</h1><p>Подборки из ваших источников — технологии, безопасность, наука, спорт и обучение.</p>'+''.join(issues)))
+(out/'index.html').write_text(page('Мои дайджесты', '<h1>Читать то,<br>что интересно.</h1><p>Security, AI и история компьютеров — до 30 материалов за неделю.</p>'+''.join(issues)))
 ET.indent(rss); ET.ElementTree(rss).write(out/'feed.xml',encoding='utf-8',xml_declaration=True)
 assert len(ET.parse(out/'feed.xml').findall('./channel/item'))==len(issues)
 assert not any(x.name in {'config.json','credentials.json','.env'} for x in out.rglob('*'))

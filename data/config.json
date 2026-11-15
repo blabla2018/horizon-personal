@@ -10,7 +10,10 @@
   },
   "sources": {
     "hackernews": {
-      "enabled": false
+      "enabled": true,
+      "fetch_top_stories": 100,
+      "min_score": 100,
+      "profile": "personal-reading"
     },
     "reddit": {
       "enabled": false
@@ -56,7 +59,7 @@
       {
         "name": "Alessia Santeramo",
         "url": "https://www.youtube.com/feeds/videos.xml?playlist_id=UULFev4nu08slP5BSW24OJuSIw",
-        "enabled": true,
+        "enabled": false,
         "category": "chess",
         "profile": "personal-reading"
       },
@@ -84,14 +87,14 @@
       {
         "name": "DC Rainmaker",
         "url": "https://www.dcrainmaker.com/feed",
-        "enabled": true,
+        "enabled": false,
         "category": "sport",
         "profile": "personal-reading"
       },
       {
         "name": "Habr",
-        "url": "${HABR_RSS_URL}",
-        "enabled": true,
+        "url": "https://habr.com/ru/rss/articles/?fl=ru",
+        "enabled": false,
         "category": "technology",
         "profile": "personal-reading"
       },
@@ -105,14 +108,14 @@
       {
         "name": "National Geographic España",
         "url": "https://www.nationalgeographic.com.es/feeds/rss.html",
-        "enabled": true,
+        "enabled": false,
         "category": "science",
         "profile": "personal-reading"
       },
       {
         "name": "Quanta Magazine",
         "url": "https://api.quantamagazine.org/feed/",
-        "enabled": true,
+        "enabled": false,
         "category": "science",
         "profile": "personal-reading"
       },
@@ -126,7 +129,7 @@
       {
         "name": "TED-Ed",
         "url": "https://www.youtube.com/feeds/videos.xml?playlist_id=UULFsooa4yRKGN_zEE8iknghZA",
-        "enabled": true,
+        "enabled": false,
         "category": "education",
         "profile": "personal-reading"
       },
@@ -147,28 +150,28 @@
       {
         "name": "Training — Bicycling",
         "url": "https://www.bicycling.com/rss/training.xml",
-        "enabled": true,
+        "enabled": false,
         "category": "sport",
         "profile": "personal-reading"
       },
       {
         "name": "Viktoria Verde, PhD",
         "url": "https://medium.com/feed/@viktoriaverde1",
-        "enabled": true,
+        "enabled": false,
         "category": "science",
         "profile": "personal-reading"
       },
       {
         "name": "Александр Гельман",
         "url": "https://www.youtube.com/feeds/videos.xml?playlist_id=UULFzRZ8iCtmqf6VyiCrZLcdWg",
-        "enabled": true,
+        "enabled": false,
         "category": "chess",
         "profile": "personal-reading"
       },
       {
         "name": "Антон Василёнок",
         "url": "https://www.youtube.com/feeds/videos.xml?playlist_id=UULF1r9xwtcNAOpW7kVKUVfaWQ",
-        "enabled": true,
+        "enabled": false,
         "category": "chess",
         "profile": "personal-reading"
       },
@@ -185,6 +188,20 @@
         "enabled": true,
         "category": "security",
         "profile": "personal-reading"
+      },
+      {
+        "name": "BleepingComputer",
+        "url": "https://www.bleepingcomputer.com/feed/",
+        "enabled": true,
+        "category": "security",
+        "profile": "personal-reading"
+      },
+      {
+        "name": "Simon Willison",
+        "url": "https://simonwillison.net/atom/everything/",
+        "enabled": true,
+        "category": "ai",
+        "profile": "personal-reading"
       }
     ]
   },
@@ -193,12 +210,14 @@
     "default_profile": "personal-reading",
     "profile_settings": {
       "personal-reading": {
-        "threshold": 4.0,
+        "threshold": 6.0,
         "topic_dedup": true
       }
     }
   },
-  "digest": {},
+  "digest": {
+    "max_items": 30
+  },
   "collection": {
     "time_window_hours": 168
   }

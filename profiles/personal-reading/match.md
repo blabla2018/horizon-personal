@@ -1,6 +1,5 @@
-# Personal reading
+# Reading interests
 
-News, explanations, practical guides and thoughtful commentary across the subjects
-represented by the user's subscriptions: technology, AI and coding, cybersecurity
-and privacy, Telegram, science and nature, cycling and training, sports devices,
-chess and education. Do not restrict this profile to technology news or major launches.
+Select only cybersecurity, privacy, scams/social engineering, substantive general AI news and AI tools, and computing/internet history. Computing history is a strong explicit interest: Norton Commander, DOS, ICQ, early messaging, classic software and hardware, internet culture and how familiar technology evolved. These historical explanations need no current breaking-news angle.
+
+Exclude sport/cycling, chess, general science/nature, language learning, generic programming tips and unrelated gadget/product news. Mixed feeds such as Hacker News and Telegram must be filtered by these interests, never accepted wholesale.
